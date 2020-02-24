@@ -270,18 +270,6 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
-
-	
-		<div class="layout-toc">
-			<div id="layout-toc">
-				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
-			</div>
-		</div>
-
-		
-		<script src="/plugin/toc/katelog.min.js"></script>
-
-		
 	 
 
 <div class="layout-post">
@@ -363,47 +351,7 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<p>Welcome to my blog! Here’s how to use the theme of this blog.My name is John Xing！</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p><font face="黑体" color="black" size="4">开始之前，你应该预先理解下列标签的意义：</font><br><font face="黑体" color="black" size="3">01. 代码对比</font></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  This is a diff block.</span><br><span class="line">+ This is add!</span><br><span class="line">- This is subtract!</span><br></pre></td></tr></table></figure>
-
-<p><font face="黑体" color="black" size="3">02. 名词约定</font></p>
-<table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">名词</th>
-<th align="center">说明</th>
-<th align="center">目录</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">站点配置文件</td>
-<td align="center">站点目录下的_config.yml文件</td>
-<td align="center">hexo/_config.yml</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">主题配置文件</td>
-<td align="center">主题目录下的_config.yml文件</td>
-<td align="center">hexo/themes/Annie/_config.yml</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">页头背景</td>
-<td align="center">网页页头背景</td>
-<td align="center">html/header(网页标签)</td>
-</tr>
-</tbody></table>
-<h3 id="一、LOGO和FAVICON"><a href="#一、LOGO和FAVICON" class="headerlink" title="一、LOGO和FAVICON"></a>一、LOGO和FAVICON</h3><p><font face="黑体" color="black" size="4">编辑主题配置文件，设置favicon和logo的路径即可。当然，你可以使用文字logo或图片logo，即logo的值为空时，主题使用title的值作为logo！</font></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># favicon &amp; logo</span></span><br><span class="line"><span class="comment"># if the value of logo is false, the 'title' is optional.</span></span><br><span class="line">-favicon: /img/favicon.ico</span><br><span class="line">-logo: /img/logo.png</span><br><span class="line">-title: Welcome </span><br><span class="line">+favicon: /img/your-favicon.ico</span><br><span class="line">+logo: /img/your-logo.png</span><br><span class="line">+title: your-title</span><br></pre></td></tr></table></figure>
-
-<h3 id="二、页头背景图片"><a href="#二、页头背景图片" class="headerlink" title="二、页头背景图片"></a>二、页头背景图片</h3><p><font face="黑体" color="black" size="4">文章详情页的页头背景图片为该文章的封面图，其他页的页头背景图片为随机图片或固定图片。原则上，使用固定图片时，应将参数mode设为normal，然后设置normal_url的路径；使用随机图片时，应将参数mode设为random，然后设置random_url的路径。</font><br><font face="黑体" color="black" size="3">01. 使用固定图片，请确保参数mode设为normal，然后设置参数normal_url的值</font></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># background_image</span></span><br><span class="line"><span class="comment"># /img/1.jpg</span></span><br><span class="line"><span class="comment"># https://source.unsplash.com/collection/954550/1920x1080</span></span><br><span class="line"><span class="comment"># https://baozhenxing.github.io/Random-img/</span></span><br><span class="line"><span class="comment"># May be cause CROS bug!</span></span><br><span class="line">background_image:</span><br><span class="line">+   mode: normal <span class="comment">#normal or random</span></span><br><span class="line">+   normal_url: /img/1.jpg</span><br><span class="line">    random_max: 110 </span><br><span class="line">    random_url: https://baozhenxing.github.io/Random-img/</span><br></pre></td></tr></table></figure>
-
-<p>!!!!!!!!!!!!后续等待更新……….!!!!!!!!!!!!</p>
-	
+		<div id="enc_content">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</div><script src="/js/crypto-js.js"></script><script>var pwd = window.prompt("please input password","");var txt = document.getElementById("enc_content").innerHTML;var bytes  = CryptoJS.AES.decrypt(txt, pwd);var plaintext = bytes.toString(CryptoJS.enc.Utf8);document.getElementById("enc_content").innerHTML = plaintext</script>	
 	</div>
 	
 	<div id="current-post-cover" data-scr="/img/post_cover/time.jpg"></div>
@@ -455,7 +403,7 @@
 								十月 14日, 2019				
 							</p>
 							<p class="relate-post-content">
-								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+								U2FsdGVkX19iJBhabCZGhhpiA69OZ/PBthsYxsgUMz0NlSo7AKAEQoMv88O8AzNR4sdI1t/39T7qb4c+z+TP4GMYZQI53zkMsPXbEgQ3+6jzxYXo2Z/2U...
 							</p>
 						</div>
 
